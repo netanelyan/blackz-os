@@ -20,18 +20,18 @@ while logedin is False:
 today = date.today()
 d1 = today.strftime("%d/%m/%Y")
 print(f"\n[+] {d1}")
-print(f"Welcome! {username}\n")
+print(f"Welcome, {username}\n")
 
 while True:
     print("""
-[1] Open Web Browser
-[2] Open Text Editor
-[3] Open File Explorer
-[4] Open Terminal
-[5] Open BioS
+[1] Web Browser
+[2] Text Editor
+[3] File Explorer
+[4] Terminal
+[5] BioS
 [6] Close OS Safely
     """)
-    choice = input("[?] Choose what you would like to do: ")
+    choice = input("[?] Choose your action: ")
 
     if choice == '1':
         call(["python", "browser.py"])
